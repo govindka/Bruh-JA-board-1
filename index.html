@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="WhatsApp Image 2024-10-26 at 12.01.51.jpeg">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bruh-JA-board</title>
+</head>
+<body>
+    <div class="main">
+        <div class="inner">
+            <img src="hold.jpg" class="image1">  
+            <div class="needle" id="MyDiv"></div>
+            <button class="btn" id="skewButton">YES</button>
+            <button class="btn" id="noButton">NO</button>
+            <button class="btn" onclick="togglePopup()" id="toggle">QUESTIONS</button>
+        </div>
+
+        <!-- Sidebar for questions -->
+        <div class="sidebar" id="sidebar">
+            <div class="topic">Questions</div>
+            <div class="content">
+                <div class="question">പേര് എന്ത്?</div>
+                <audio controls class="audio">
+                    <source src="4.mp3" type="audio/ogg">
+                </audio>
+            </div>
+            <div class="content">
+                <div class="question">സിംഗിള്‍ ആണോ അല്ലേ?</div>
+                <audio controls class="audio">
+                    <source src="1.mp3" type="audio/ogg">
+                </audio>
+            </div>
+            <div class="content">
+                <div class="question">നിങ്ങൾ ഒരു ബിടെക് പ്രേതമാണോ?</div>
+                <audio controls class="audio">
+                    <source src="2.mp3" type="audio/ogg">
+                </audio>
+            </div>
+            <div class="content">
+                <div class="question">പോരുന്നോ എന്റെ കൂടെ</div>
+                <audio controls class="audio">
+                    <source src="3.mp3" type="audio/ogg">
+                </audio>
+            </div>
+            <button class="btn" onclick="closePopup()">Close</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
